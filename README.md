@@ -1,5 +1,5 @@
 # MuseumQuest Project
-Museum Quest project will be a proof of concept project regarding on building a multi-user gallery / museum experience.
+Museum Quest project will be a proof of concept project regarding on building a multi-user gallery / museum experience starting on Oculus Quest
 
 ## Features
 
