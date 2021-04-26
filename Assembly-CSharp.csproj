@@ -236,6 +236,7 @@
     <Compile Include="Assets\Photon\PhotonRealtime\Demos\DemoLoadBalancing\ConnectAndJoinRandomLb.cs" />
     <Compile Include="Assets\Scripts\HandPresence.cs" />
     <Compile Include="Assets\Scripts\ImageLoader.cs" />
+    <Compile Include="Assets\Scripts\ImageLoadingManager.cs" />
     <Compile Include="Assets\Scripts\NetworkManager.cs" />
     <Compile Include="Assets\Scripts\NetworkPlayer.cs" />
     <Compile Include="Assets\Scripts\NetworkPlayerSpawner.cs" />
