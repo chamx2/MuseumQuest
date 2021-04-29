@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Dave/MainMenu.unity
+    guid: 4c92ebfc74acd07499fae8ba216d524d
+  - enabled: 1
     path: Assets/Scenes/Dave/MuseumScene.unity
     guid: 954bd8063d261654abff3422739ac6fd
   m_configObjects: {}

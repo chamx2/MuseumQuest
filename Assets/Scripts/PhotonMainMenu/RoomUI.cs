@@ -6,7 +6,10 @@ public class RoomUI : MonoBehaviour
 {
     public LobbyNetworkManager lobbynetwork;
     [SerializeField] private TextMeshProUGUI roomName;
-
+    private void Awake()
+    {
+        lobbynetwork = FindObjectOfType<LobbyNetworkManager>();
+    }
     public void SetRoomName(string room_name) {
         roomName.text = room_name;
     }

@@ -241,6 +241,7 @@
     <Compile Include="Assets\Scripts\NetworkPlayer.cs" />
     <Compile Include="Assets\Scripts\NetworkPlayerSpawner.cs" />
     <Compile Include="Assets\Scripts\PhotonMainMenu\LobbyNetworkManager.cs" />
+    <Compile Include="Assets\Scripts\PhotonMainMenu\RoomManager.cs" />
     <Compile Include="Assets\Scripts\PhotonMainMenu\RoomUI.cs" />
     <Compile Include="Assets\Scripts\XRGrabNetworkInteractable.cs" />
     <None Include="Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Shaders\XingLightShader.shader" />
