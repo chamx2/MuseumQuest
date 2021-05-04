@@ -5,16 +5,19 @@ using Photon.Pun;
 using Photon.Realtime;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 public class LobbyNetworkManager : MonoBehaviourPunCallbacks
 {
     [SerializeField] private TMP_InputField roomName, playerNickName;
     [SerializeField] private TextMeshProUGUI nickname;
     [SerializeField] private GameObject roomsParent, roomPrefab,roomPopup, joiningLobby;
+    [SerializeField] private TouchScreenKeyboard overlayKeyboard;
     //[SerializeField] private Button createRoomButton;
     private void Start()
     {
         joiningLobby.SetActive(true);
-        Connect();
+        Connect(); 
+        overlayKeyboard = TouchScreenKeyboard.Open("", TouchScreenKeyboardType.Default);
     }
     private void Connect() {
         //PhotonNetwork.NickName = "Player" + Random.Range(0, 5000);
@@ -51,11 +54,10 @@ public class LobbyNetworkManager : MonoBehaviourPunCallbacks
     }
     private void Update()
     {
-        nickname.text = PhotonNetwork.NickName;
+        nickname.text = PhotonNetwork.LocalPlayer.NickName;
     }
     public void SetNickName() {
-        PhotonNetwork.NickName = playerNickName.text;
-        Debug.Log(PhotonNetwork.NickName);
+        PhotonNetwork.LocalPlayer.NickName = playerNickName.text;
     }
     public void JoinRoom(string room_name) {
         PhotonNetwork.JoinRoom(room_name);
@@ -81,5 +83,8 @@ public class LobbyNetworkManager : MonoBehaviourPunCallbacks
     }
     public void LeaveRoom() {
         PhotonNetwork.LeaveRoom();
+    }
+    public void EnterRoom() {
+        SceneManager.LoadScene("MuseumScene");
     }
 }

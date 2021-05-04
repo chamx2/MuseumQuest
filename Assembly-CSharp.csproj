@@ -237,6 +237,7 @@
     <Compile Include="Assets\Scripts\HandPresence.cs" />
     <Compile Include="Assets\Scripts\ImageLoader.cs" />
     <Compile Include="Assets\Scripts\ImageLoadingManager.cs" />
+    <Compile Include="Assets\Scripts\KeyboardManager.cs" />
     <Compile Include="Assets\Scripts\NetworkManager.cs" />
     <Compile Include="Assets\Scripts\NetworkPlayer.cs" />
     <Compile Include="Assets\Scripts\NetworkPlayerSpawner.cs" />
@@ -244,6 +245,16 @@
     <Compile Include="Assets\Scripts\PhotonMainMenu\RoomManager.cs" />
     <Compile Include="Assets\Scripts\PhotonMainMenu\RoomUI.cs" />
     <Compile Include="Assets\Scripts\XRGrabNetworkInteractable.cs" />
+    <Compile Include="Assets\Tales From The Rift\CanvasKeyboard\Demo\CanvasKeyboardEditableButton.cs" />
+    <Compile Include="Assets\Tales From The Rift\CanvasKeyboard\Demo\ToggleKeyboard.cs" />
+    <Compile Include="Assets\Tales From The Rift\CanvasKeyboard\Scripts\CanvasKeyboard.cs" />
+    <Compile Include="Assets\Tales From The Rift\CanvasKeyboard\Scripts\CanvasKeyboardASCII.cs" />
+    <Compile Include="Assets\Tales From The Rift\CanvasKeyboard\Scripts\OpenCanvasKeyboard.cs" />
+    <Compile Include="Assets\Tales From The Rift\Gaze\Demo\ButtonListener.cs" />
+    <Compile Include="Assets\Tales From The Rift\Gaze\Demo\CubeListener.cs" />
+    <Compile Include="Assets\Tales From The Rift\Gaze\Demo\GazeCrosshairOnOff.cs" />
+    <Compile Include="Assets\Tales From The Rift\Gaze\GazeInputModule.cs" />
+    <Compile Include="Assets\Tales From The Rift\Gaze\GazeInputModuleCrosshair.cs" />
     <None Include="Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Shaders\XingLightShader.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
     <None Include="Assets\Oculus\Avatar\Resources\Materials\AvatarMaterialStateShader.cginc" />

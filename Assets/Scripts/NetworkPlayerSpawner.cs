@@ -1,18 +1,22 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.XR;
 using Photon.Pun;
-
-
+using UnityEngine.XR.Interaction.Toolkit;
 public class NetworkPlayerSpawner : MonoBehaviourPunCallbacks
 {
-    private GameObject spawnedPlayerPrefab;
-
-
+    public GameObject spawnedPlayerPrefab;
+    public Transform[] positions;
+    public int counter = 0;
     public override void OnJoinedRoom()
     {
         base.OnJoinedRoom();
-        spawnedPlayerPrefab = PhotonNetwork.Instantiate("Network Player", transform.position, transform.rotation);
-    }
+        // rigPrefab = PhotonNetwork.Instantiate("XR Rig", positions[counter].position, positions[counter].rotation);
+        spawnedPlayerPrefab = PhotonNetwork.Instantiate("Network Player", positions[0].position, positions[0].rotation);
+        counter++;
 
+    }
     public override void OnLeftRoom()
     {
         base.OnLeftRoom();
