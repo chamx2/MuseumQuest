@@ -84,7 +84,7 @@ public class LobbyNetworkManager : MonoBehaviourPunCallbacks
     public void LeaveRoom() {
         PhotonNetwork.LeaveRoom();
     }
-    public void EnterRoom() {
+    public void GoToMuseum() {
         SceneManager.LoadScene("MuseumScene");
     }
 }

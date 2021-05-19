@@ -11,11 +11,15 @@ public class NetworkPlayerSpawner : MonoBehaviourPunCallbacks
     public int counter = 0;
     public override void OnJoinedRoom()
     {
-        base.OnJoinedRoom();
         // rigPrefab = PhotonNetwork.Instantiate("XR Rig", positions[counter].position, positions[counter].rotation);
+        
+        base.OnJoinedRoom();
+
+    }
+    private void Start()
+    {
         spawnedPlayerPrefab = PhotonNetwork.Instantiate("Network Player", positions[0].position, positions[0].rotation);
         counter++;
-
     }
     public override void OnLeftRoom()
     {

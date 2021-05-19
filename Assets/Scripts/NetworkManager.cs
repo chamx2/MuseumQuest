@@ -36,7 +36,13 @@ public class NetworkManager : MonoBehaviourPunCallbacks
 
 
     }*/
+    private void Start()
+    {
+        if (PhotonNetwork.InRoom) {
 
+            Debug.Log("YOU ARE IN ROOM: " + PhotonNetwork.CurrentRoom.Name);
+        }
+    }
     public override void OnPlayerEnteredRoom(Player newPlayer)
     {
         Debug.Log(" A new player joined the room");
