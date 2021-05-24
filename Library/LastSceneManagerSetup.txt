@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/Dave/MainMenu.unity
+- path: Assets/Scenes/Dave/MainMenuAPI.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
