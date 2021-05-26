@@ -4,11 +4,15 @@ using UnityEngine;
 using TMPro;
 public class KeyboardManager : MonoBehaviour
 {
+    [SerializeField] private Canvas canvas;
     [SerializeField] private GameObject keyboard;
     private TMP_InputField[] inputFields;
     private void Awake()
     {
         inputFields = FindObjectsOfType<TMP_InputField>();
+        if (canvas != null) {
+            canvas.worldCamera = Camera.main;
+        }
     }
     private void Start()
     {

@@ -274,6 +274,7 @@
     <Compile Include="Assets\Scripts\ImageLoader.cs" />
     <Compile Include="Assets\Scripts\ImageLoadingManager.cs" />
     <Compile Include="Assets\Scripts\KeyboardManager.cs" />
+    <Compile Include="Assets\Scripts\LobbyAPINetworkManager.cs" />
     <Compile Include="Assets\Scripts\NetworkManager.cs" />
     <Compile Include="Assets\Scripts\NetworkPlayer.cs" />
     <Compile Include="Assets\Scripts\NetworkPlayerSpawner.cs" />
@@ -281,6 +282,61 @@
     <Compile Include="Assets\Scripts\PhotonMainMenu\RoomManager.cs" />
     <Compile Include="Assets\Scripts\PhotonMainMenu\RoomUI.cs" />
     <Compile Include="Assets\Scripts\XRGrabNetworkInteractable.cs" />
+    <Compile Include="Assets\Setup Scripts\DisplayUI.cs" />
+    <Compile Include="Assets\Setup Scripts\MonoBehaviour\Base Class\Element.cs" />
+    <Compile Include="Assets\Setup Scripts\MonoBehaviour\Game Scripts\BackgroundController.cs" />
+    <Compile Include="Assets\Setup Scripts\MonoBehaviour\Game Scripts\DamageSystem\Damageable.cs" />
+    <Compile Include="Assets\Setup Scripts\MonoBehaviour\Game Scripts\DamageSystem\Damager.cs" />
+    <Compile Include="Assets\Setup Scripts\MonoBehaviour\Game Scripts\Modular\ActorAudio.cs" />
+    <Compile Include="Assets\Setup Scripts\MonoBehaviour\Game Scripts\Modular\ActorParticles.cs" />
+    <Compile Include="Assets\Setup Scripts\MonoBehaviour\Game Scripts\Modular\BGMController.cs" />
+    <Compile Include="Assets\Setup Scripts\MonoBehaviour\Game Scripts\Modular\Boundary.cs" />
+    <Compile Include="Assets\Setup Scripts\MonoBehaviour\Game Scripts\Modular\ButtonVibrate.cs" />
+    <Compile Include="Assets\Setup Scripts\MonoBehaviour\Game Scripts\Modular\DelayedCallback.cs" />
+    <Compile Include="Assets\Setup Scripts\MonoBehaviour\Game Scripts\Modular\ElementCollision.cs" />
+    <Compile Include="Assets\Setup Scripts\MonoBehaviour\Game Scripts\Modular\ElementTrigger.cs" />
+    <Compile Include="Assets\Setup Scripts\MonoBehaviour\Game Scripts\Modular\GameObjectSelector.cs" />
+    <Compile Include="Assets\Setup Scripts\MonoBehaviour\Game Scripts\Modular\GenericTimer.cs" />
+    <Compile Include="Assets\Setup Scripts\MonoBehaviour\Game Scripts\Modular\LevelChanger.cs" />
+    <Compile Include="Assets\Setup Scripts\MonoBehaviour\Game Scripts\Modular\Spawner.cs" />
+    <Compile Include="Assets\Setup Scripts\MonoBehaviour\Game Scripts\Modular\StopWatch.cs" />
+    <Compile Include="Assets\Setup Scripts\MonoBehaviour\Game Scripts\PoolPreWarmer.cs" />
+    <Compile Include="Assets\Setup Scripts\MonoBehaviour\Menu Scripts\BGScaler.cs" />
+    <Compile Include="Assets\Setup Scripts\MonoBehaviour\Menu Scripts\UITween\BlinkCanvasGroup.cs" />
+    <Compile Include="Assets\Setup Scripts\MonoBehaviour\Menu Scripts\UITween\FadingUI.cs" />
+    <Compile Include="Assets\Setup Scripts\MonoBehaviour\Menu Scripts\UITween\ScalingLoopUI.cs" />
+    <Compile Include="Assets\Setup Scripts\MonoBehaviour\Menu Scripts\UITween\ScalingUI.cs" />
+    <Compile Include="Assets\Setup Scripts\MonoBehaviour\Menu Scripts\UITween\ScrollingUI.cs" />
+    <Compile Include="Assets\Setup Scripts\MonoBehaviour\Menu Scripts\UITween\SlidingUI.cs" />
+    <Compile Include="Assets\Setup Scripts\MonoBehaviour\Test Scripts\ClientTest\JsonHelper.cs" />
+    <Compile Include="Assets\Setup Scripts\MonoBehaviour\Test Scripts\DataSaving Tests\GDataController.cs" />
+    <Compile Include="Assets\Setup Scripts\MonoBehaviour\Test Scripts\DataSaving Tests\GameData.cs" />
+    <Compile Include="Assets\Setup Scripts\MonoBehaviour\UpdateManager.cs" />
+    <Compile Include="Assets\Setup Scripts\ScriptableObjects\Audio\AudioEvent.cs" />
+    <Compile Include="Assets\Setup Scripts\ScriptableObjects\Audio\CompositeAudioEvent.cs" />
+    <Compile Include="Assets\Setup Scripts\ScriptableObjects\Audio\SimpleAudioEvent.cs" />
+    <Compile Include="Assets\Setup Scripts\ScriptableObjects\Element\ElementType.cs" />
+    <Compile Include="Assets\Setup Scripts\ScriptableObjects\EventSystem\EventListener.cs" />
+    <Compile Include="Assets\Setup Scripts\ScriptableObjects\EventSystem\EventRaiser.cs" />
+    <Compile Include="Assets\Setup Scripts\ScriptableObjects\EventSystem\GameEvent.cs" />
+    <Compile Include="Assets\Setup Scripts\ScriptableObjects\GameSettings\Base\BaseDatabase.cs" />
+    <Compile Include="Assets\Setup Scripts\ScriptableObjects\GameSettings\SO_TimeData.cs" />
+    <Compile Include="Assets\Setup Scripts\ScriptableObjects\ObjectPool\PoolData.cs" />
+    <Compile Include="Assets\Setup Scripts\ScriptableObjects\Sets\RuntimeSet.cs" />
+    <Compile Include="Assets\Setup Scripts\ScriptableObjects\Sets\Thing.cs" />
+    <Compile Include="Assets\Setup Scripts\ScriptableObjects\Sets\ThingRuntimeSet.cs" />
+    <Compile Include="Assets\Setup Scripts\ScriptableObjects\Variables\FloatReference.cs" />
+    <Compile Include="Assets\Setup Scripts\ScriptableObjects\Variables\FloatVariable.cs" />
+    <Compile Include="Assets\Setup Scripts\ScriptableObjects\Variables\ListIntVariable.cs" />
+    <Compile Include="Assets\Setup Scripts\ScriptableObjects\Variables\ListStringVariable.cs" />
+    <Compile Include="Assets\Setup Scripts\Utilities\DontDestroyOnLoad.cs" />
+    <Compile Include="Assets\Setup Scripts\Utilities\ExtensionMethods.cs" />
+    <Compile Include="Assets\Setup Scripts\Utilities\FPSTarget.cs" />
+    <Compile Include="Assets\Setup Scripts\Utilities\MinMaxRangeAttribute.cs" />
+    <Compile Include="Assets\Setup Scripts\Utilities\RangedFloat.cs" />
+    <Compile Include="Assets\Setup Scripts\Utilities\SaveEncoder.cs" />
+    <Compile Include="Assets\Setup Scripts\Utilities\Singleton.cs" />
+    <Compile Include="Assets\Setup Scripts\Utilities\WeightedRandomizer.cs" />
     <Compile Include="Assets\Tales From The Rift\CanvasKeyboard\Demo\CanvasKeyboardEditableButton.cs" />
     <Compile Include="Assets\Tales From The Rift\CanvasKeyboard\Demo\ToggleKeyboard.cs" />
     <Compile Include="Assets\Tales From The Rift\CanvasKeyboard\Scripts\CanvasKeyboard.cs" />
@@ -556,6 +612,9 @@
     </Reference>
     <Reference Include="websocket-sharp">
       <HintPath>D:/Work/Repositories/MuseumQuest/Assets/Photon/PhotonLibs/WebSocket/websocket-sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween">
+      <HintPath>D:/Work/Repositories/MuseumQuest/Assets/Plugins/Demigiant/DOTween/DOTween.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.14f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
@@ -955,6 +1014,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{5BCC363D-98CE-07DE-0C2E-3978976BD358}</Project>
+      <Name>Assembly-CSharp-firstpass</Name>
+    </ProjectReference>
     <ProjectReference Include="PhotonUnityNetworking.Utilities.PhotonPlayer.Editor.csproj">
       <Project>{77C80490-F92F-0F55-60C5-7B342813792E}</Project>
       <Name>PhotonUnityNetworking.Utilities.PhotonPlayer.Editor</Name>

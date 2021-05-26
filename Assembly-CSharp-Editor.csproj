@@ -90,6 +90,10 @@
     <Compile Include="Assets\Oculus\Spatializer\editor\ONSPPropagationSerializationManager.cs" />
     <Compile Include="Assets\Oculus\Spatializer\editor\ONSPReflectionCustomGUI.cs" />
     <Compile Include="Assets\Photon\PhotonVoice\Demos\DemoVoicePun\Editor\CrossPlatformInput\CrossPlatformInputInitialize.cs" />
+    <Compile Include="Assets\Setup Scripts\Editor\AudioEventEditor.cs" />
+    <Compile Include="Assets\Setup Scripts\Editor\FloatReferenceDrawer.cs" />
+    <Compile Include="Assets\Setup Scripts\Editor\GameEventEditor.cs" />
+    <Compile Include="Assets\Setup Scripts\Editor\RangedFloatDrawer.cs" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.14f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -296,6 +300,12 @@
     </Reference>
     <Reference Include="websocket-sharp">
       <HintPath>D:/Work/Repositories/MuseumQuest/Assets/Photon/PhotonLibs/WebSocket/websocket-sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween">
+      <HintPath>D:/Work/Repositories/MuseumQuest/Assets/Plugins/Demigiant/DOTween/DOTween.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTweenEditor">
+      <HintPath>D:/Work/Repositories/MuseumQuest/Assets/Plugins/Demigiant/DOTween/Editor/DOTweenEditor.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>D:/Work/Repositories/MuseumQuest/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
@@ -704,6 +714,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{5BCC363D-98CE-07DE-0C2E-3978976BD358}</Project>
+      <Name>Assembly-CSharp-firstpass</Name>
+    </ProjectReference>
     <ProjectReference Include="Assembly-CSharp.csproj">
       <Project>{D2A6550D-8A3B-3DA7-E658-06CAF04BBC77}</Project>
       <Name>Assembly-CSharp</Name>
