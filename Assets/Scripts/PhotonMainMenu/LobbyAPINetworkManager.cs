@@ -15,6 +15,7 @@ public class LobbyAPINetworkManager : MonoBehaviourPunCallbacks
     private void Start()
     {
         //joiningLobby.SetActive(true);
+        GetRoomList();
         Connect();
     }
     private void Connect()
@@ -79,7 +80,7 @@ public class LobbyAPINetworkManager : MonoBehaviourPunCallbacks
     {
         SceneManager.LoadScene("MuseumScene");
     }
-    public void GetRoomList() { 
-        
+    public void GetRoomList() {
+        ApiCoroutines.Instance.GetRoomList("", roomList);
     }
 }

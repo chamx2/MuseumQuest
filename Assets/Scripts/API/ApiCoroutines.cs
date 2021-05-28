@@ -1,6 +1,4 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
-using HarayaLabs;
 using Newtonsoft.Json;
 using UnityEngine;
 using UnityEngine.Networking;
@@ -29,7 +27,7 @@ public class ApiCoroutines : Singleton<ApiCoroutines>
         yield return www.SendWebRequest();
         if (www.isNetworkError || www.isHttpError)
         {
-            JsonConvert.PopulateObject(www.downloadHandler.text, roomList);
+            Newtonsoft.Json.JsonConvert.PopulateObject(www.downloadHandler.text, roomList);
         }
         else
         {
